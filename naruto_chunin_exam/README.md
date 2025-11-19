@@ -1,32 +1,18 @@
-# Naruto Chūnin Exam Adventure
+# 火影·中忍考试文字冒险【中文版】
 
-This repository contains a simple command‑line game inspired by the **Chūnin Exam arc** of *Naruto*.  The game is built on top of mechanics borrowed from the 2024/5.5 edition of Dungeons & Dragons, including the standard ability score array and heroic inspiration【302656013783284†L88-L152】【109094228942248†L148-L180】.  Players progress through the three exam phases—written test, Forest of Death, and preliminary matches—while making ability checks against DCs using d20 rolls.  An automated Dungeon Master adjudicates events, combats and branching outcomes.
+本目录包含基于《火影忍者》动画/漫画中中忍考试篇改编的文字冒险游戏。游戏采用 2024/5.5 版 DND 规则（能力值标准数组、英雄灵感、疲劳检定等【302656013783284†L88-L93】），通过程序化 DM 自动审判骰子检定与事件，让玩家专注于剧情抵押。
 
-## Features
+## 特性
 
-- **Character creation** using the standard array of ability scores (16, 14, 13, 12, 10, 8)【302656013783284†L88-L152】.
-- **Heroic inspiration**, granting each player a single reroll per session【109094228942248†L148-L180】.
-- A narrative that mirrors the **written test**, **Forest of Death**, and **preliminary matches** of the Chūnin exams【999661209240364†L269-L417】.
-- Automated encounters and ability checks requiring decisions to cheat, fight or endure, reducing the player’s calculation burden.
-- Support for **1–3 players**, echoing the three‑nin team structure in Naruto.
+- **完整流程**：涵盖笔试、死亡森林、预赛、决赛及木叶崩溃计划等关键情节，并设定多个随机事件与决策分支，支持 1–3 人队体。
+- **简化运算**：程序自动掷 d20 骰子并计算属性修正、英雄灵感重掷、疲劳影响等，使玩家免受手算之苦。
+- **角色成长**：采用标准属性数组 [16, 14, 13, 12, 10, 8]【302656013783284†L88-L93】，每名角色初始拥有一点英雄灵感，可在关键检定中消耗重掷。
+- **剧情决择**：玩家决定是否作弊、交换卷轴、迎战大蛇丸或协助木叶防御等，影响故事路线与结局。
 
-## Running the Game
+## 运行方法
 
-To play, ensure you have Python 3 installed.  Run the script from the command line:
+1. 确保环境已安装 Python 3。
+2. 运行 `python3 naruto_game.py` 启动游戏。
+3. 按照提示输入玩家人数和姓名，阅读叙述并根据选项做出决策。
 
-```bash
-python3 naruto_game.py
-```
-
-Follow the prompts to specify the number of players, enter character names and make choices during each exam phase.  When prompted to spend inspiration, respond with the number corresponding to your choice.
-
-## Extending
-
-This project is intentionally simple to illustrate how one might automate a tabletop RPG story.  For a richer experience you could:
-
-- Implement additional backgrounds and feats inspired by D&D 2024 rules【885722936521575†L45-L97】.
-- Expand the encounter system with more diverse abilities and consequences.
-- Introduce resources such as chakra, jutsu or weapons with unique properties【302656013783284†L340-L398】.
-- Create a graphical interface using a GUI library.
-
-Feel free to fork this branch and build upon it!
+在终端运行时，建议使用等宽字体以获得更好的阅读体验。
