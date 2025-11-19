@@ -1,0 +1,13 @@
+appId: com.gptplayground.mario
+productName: MarioCanvas
+directories:
+  output: dist
+files:
+  - '**/*'
+  - '!dist/**'
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+        - ia32
