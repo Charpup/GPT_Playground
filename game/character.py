@@ -67,7 +67,8 @@ class Character:
         else:
             recovered = max(1, self.modifier("体魄"))
             self.hp += recovered
-            self.chakra = min(self.chakra + recovered, self.ability_scores.get("体魄", 10) + self.ability_scores.get("意志", 10) * 2)
+            max_chakra = self.ability_scores.get("体魄", 10) + self.ability_scores.get("意志", 10) * 2
+            self.chakra = min(self.chakra + recovered, max_chakra)
         if self.fatigue:
             self.fatigue -= 1
 

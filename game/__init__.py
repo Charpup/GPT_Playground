@@ -1,3 +1,5 @@
-"""Interactive text adventure for the Chunin Exams inspired campaign."""
+"""Fire off the Naruto: Chunin Exams text adventure."""
 
-__all__ = ["main"]
+from .dm import run_game
+
+__all__ = ["run_game"]

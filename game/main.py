@@ -2,7 +2,7 @@
 
 import argparse
 
-from .events import run_game
+from .dm import run_game
 
 
 def main() -> None:
