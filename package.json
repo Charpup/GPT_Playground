@@ -1,0 +1,20 @@
+{
+  "name": "gpt_playground",
+  "version": "1.0.0",
+  "description": "One to explore what GPT can do with CodeX.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable --config electron-builder.yml",
+    "package": "electron-builder --dir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^39.2.2",
+    "electron-builder": "^26.0.12"
+  }
+}

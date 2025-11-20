@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Mario (Canvas Tribute)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hud">
+      <div class="hud__block"><span class="label">MARIO</span><span id="score">000000</span></div>
+      <div class="hud__block"><span class="label">WORLD</span><span id="world">1-1</span></div>
+      <div class="hud__block"><span class="label">COIN</span><span id="coins">x00</span></div>
+      <div class="hud__block"><span class="label">LIVES</span><span id="lives">3</span></div>
+    </section>
+
+    <section class="canvas-wrap">
+      <canvas id="game" width="960" height="540" aria-label="Retro Mario game"></canvas>
+      <div class="overlay" id="message"></div>
+    </section>
+
+    <section class="legend">
+      <h1>Super Mario – FC Canvas Tribute</h1>
+      <p class="intro">
+        重现 FC 时代的马里奥：砖块、问号、金币、管道和栗宝宝都在这片 8-bit 像素世界里。
+      </p>
+      <ul>
+        <li><strong>方向键</strong> 左右移动</li>
+        <li><strong>Z / 空格</strong> 跳跃</li>
+        <li>踩掉栗宝宝、顶起问号方块获取金币、到达旗杆完成关卡</li>
+        <li>失去全部生命后游戏重置</li>
+      </ul>
+      <p class="note">游戏在浏览器内纯 Canvas 渲染，无需额外资源。</p>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
